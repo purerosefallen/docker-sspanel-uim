@@ -57,6 +57,7 @@ services:
     volumes:
       - ./config/.config.php:/app/config/.config.php
       - ./config/appprofile.php:/app/config/appprofile.php
+      - ./docker-cron.sh:/app/docker-cron.sh:ro
       - public:/app/public
       - storage:/app/storage
       - socket:/run/sspanel

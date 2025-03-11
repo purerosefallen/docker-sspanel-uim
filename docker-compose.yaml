@@ -34,6 +34,13 @@ services:
       file: docker-compose.extra.yaml
       service: init
 
+  cf:
+    restart: always
+    image: cloudflare/cloudflared
+    env_file:
+      - ./.env
+    command: tunnel --no-autoupdate run --token $CFD_TOKEN
+
 volumes:
   public:
   storage:

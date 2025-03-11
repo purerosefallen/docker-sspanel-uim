@@ -11,6 +11,7 @@ MARIADB_ROOT_PASSWORD=MyRootPassword
 REDIS_DEFAULT_PASSWORD=MyDefaultPassword
 SSPANEL_ADMIN_EMAIL=sspanel@example.com
 SSPANEL_ADMIN_PASSWORD=MySSPanelPassword
+CFD_TOKEN=MyCFDToken
 ```
 
 Create `.config.php` in `config` directory and edit it:
